@@ -9,7 +9,8 @@
     "db-create": "npx sequelize db:create",
     "db-drop": "npx sequelize db:drop",
     "db-migrate": "npx sequelize db:migrate",
-    "db-undo-migrate": "npx sequelize db:migrate:undo:all"
+    "db-undo-migrate": "npx sequelize db:migrate:undo:all",
+    "postinstall": "npm run db-undo-migrate && npm run db-migrate"
   },
   "keywords": [],
   "author": "",
